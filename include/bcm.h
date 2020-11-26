@@ -1,0 +1,4 @@
+// Base peripheral addresses (physical):
+#define BCM2835_PERI_BASE_PHYS_ADDR 0x20000000
+#define BCM2837_PERI_BASE_PHYS_ADDR 0x3F000000
+#define BCM2711_PERI_BASE_PHYS_ADDR 0xFE000000
