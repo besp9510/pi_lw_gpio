@@ -160,7 +160,11 @@ int gpio_read_mode(int p);
 ```
 
 ##### Return Value
-`gpio_read_mode()` returns 0 upon success. On error, an error number is returned.
+`gpio_read_mode()` returns the following upon success.
+* `GPIO_INPUT`
+* `GPIO_OUTPUT`
+
+On error, an error number is returned.
 
 Error numbers:
 * `ENOPIVER` : Could not get Pi board revision.
