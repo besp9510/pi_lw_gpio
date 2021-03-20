@@ -7,10 +7,10 @@ REV := 0
 AGE := 0
 
 # Target shared library soname:
-TARGET := libpigpio.so
+TARGET := libpilwgpio.so
 
 # Header file
-HEADER := pi_gpio.h
+HEADER := pi_lw_gpio.h
 
 # Root directories:
 ROOT := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))

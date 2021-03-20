@@ -22,7 +22,7 @@ OBJEXT := o
 CFLAGS   := -Wall -O2 -g # C flags
 LDFLAGS  :=
 
-LIB     := -lpigpio
+LIB     := -lpilwgpio
 INC     := -I$(INCDIR)
 INCDEP  := -I$(INCDIR)
 

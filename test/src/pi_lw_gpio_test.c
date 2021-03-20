@@ -4,7 +4,7 @@
 #include <time.h>   // C Standard date and time manipulation
 
 // Include pi_gpio.c:
-#include "pi_gpio.h"
+#include "pi_lw_gpio.h"
 
 // Read GPIO modes and levels and print in a table
 static void read_gpio(void) {
