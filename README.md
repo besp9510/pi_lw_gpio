@@ -1,11 +1,11 @@
 # Lightweight GPIO Interface Library for the Raspberry Pi
-pi_gpio.c provides a lightweight General Purpose Input Output (GPIO) interface library for the Raspberry Pi via virtual memory mapping of the GPIO peripheral. This software requires no dependencies other than Raspbian running on any version of the Raspberry Pi. Note, not all possible GPIO functions are included in this library at the present.
+pi_lw_gpio.c provides a lightweight General Purpose Input Output (GPIO) interface library for the Raspberry Pi via virtual memory mapping of the GPIO peripheral. This software requires no dependencies other than Raspbian running on any version of the Raspberry Pi. Note, not all possible GPIO functions are included in this library at the present.
 
 This project is not meant to replace the many, and much better, existing PI GPIO libraries such as [pigpio](http://abyz.me.uk/rpi/pigpio/) and [Wiring Pi](http://wiringpi.com/). The purpose is to publish the tools I created to learn more about the Pi as well as share the learning process to others. As such, this emphasizes documenting how GPIO interface via virtual memory mapping is achieved to allow anyone a better understanding of the Raspberry PI and low-level programming in general.
 
 ![gpio](images/gpio.jpg)
 
-pi_gpio.c is provided two ways for flexibility:
+pi_lw_gpio.c is provided two ways for flexibility:
 1. C source and header files that can be compiled along with your program
 2. C shared library
 
@@ -22,7 +22,7 @@ These instructions will get you a copy of the project up and running on your loc
 First, clone this repository.
 
 ```
-$ git clone https://github.com/besp9510/pi_gpio.git
+$ git clone https://github.com/besp9510/pi_lw_gpio.git
 ```
 
 Alternatively, download the repository from Git.
@@ -39,7 +39,7 @@ By default, files will be installed under `/usr/local/`. Note that passing the o
 
 #### Make
 
-Compile pi_gpio.c into a shared library.
+Compile pi_lw_gpio.c into a shared library.
 
 ```
 $ make
@@ -52,7 +52,7 @@ $ sudo make install
 ```
 
 #### Uninstall
-At anytime, to uninstall pi_gpio.c, use the same Makefile used for compiling or a Makefile generated using the configuration script with the same options as root or with root privileges.
+At anytime, to uninstall pi_lw_gpio.c, use the same Makefile used for compiling or a Makefile generated using the configuration script with the same options as root or with root privileges.
 
 ```
 $ sudo make uninstall
@@ -60,7 +60,7 @@ $ sudo make uninstall
 
 ## Running the Test
 
-pi_gpio_test.c is a test script to check and see the GPIO interface library working on your PI. The outline of this test script:
+pi_lw_gpio_test.c is a test script to check and see the GPIO interface library working on your PI. The outline of this test script:
 1. Read all pin's mode and level
 2. All pins to output
 3. Set all pins
@@ -74,7 +74,7 @@ To compile the test script, first navigate to the test directory `test/`. Next, 
 $ ./configure
 ```
 
-By default, the pi_gpio.c shared library will be looked for under the standard directories (e.g. `/usr/local/`). If this is not the case, pass the option ``--help`` to learn how to specify a directory to be searched. Additionally, ``--help`` will also display available configuration options such as debug symbols and debug logs.
+By default, the pi_lw_gpio.c shared library will be looked for under the standard directories (e.g. `/usr/local/`). If this is not the case, pass the option ``--help`` to learn how to specify a directory to be searched. Additionally, ``--help`` will also display available configuration options such as debug symbols and debug logs.
 
 Next, compile the test script:
 

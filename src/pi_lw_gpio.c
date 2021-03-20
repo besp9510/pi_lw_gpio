@@ -6,7 +6,7 @@
 #include <sys/mman.h> // Memory management library
 
 // Include header files:
-#include "pi_gpio.h"        // Macro definitions
+#include "pi_lw_gpio.h"     // Macro definitions
 #include "bcm.h"            // Physical address definitions
 #include "map_peripheral.h" // Map peripherals into virtual memory
 #include "get_pi_version.h" // Determines PI versions
