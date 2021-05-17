@@ -51,6 +51,8 @@ Then install files to the installation directory. You must run the following eit
 $ sudo make install
 ```
 
+To use pi_lw_gpio.c in your project, simply include the header file `pi_lw_gpio.h` and link to the shared library `-lpilwgpio`.
+
 #### Uninstall
 At anytime, to uninstall pi_lw_gpio.c, use the same Makefile used for compiling or a Makefile generated using the configuration script with the same options as root or with root privileges.
 
