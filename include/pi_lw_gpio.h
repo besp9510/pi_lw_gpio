@@ -3,7 +3,7 @@
 #define GPIO_OUTPUT 0x01
 
 // Error numbers:
-#define ENOPIVER 9 // Could not get PI board revision
+#define ENOPIVER 2 // Could not get PI board revision
 
 // GPIO operation function prototypes:
 int gpio_set(int p);
