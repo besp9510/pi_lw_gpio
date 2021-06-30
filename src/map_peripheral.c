@@ -20,8 +20,12 @@ volatile uintptr_t* map_peripheral__(uintptr_t base_addr) {
 
     // Check success:
     if (fd < 0) {
+        // Output message:
+        printf("Could not open /dev/mem." \
+            " Make sure run as root or with root privileges\n");
+
         // Exit:
-        return NULL;
+        return MAP_FAILED;
     }
 
     // Memory map GPIOs into virtual memory:
