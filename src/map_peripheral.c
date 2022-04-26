@@ -59,7 +59,7 @@ volatile uintptr_t* map_peripheral__(uintptr_t base_addr) {
         MAP_SHARED,             // Shared with other processes
         fd,                     // File to map
         base_addr               // Offset to peripheral
-   );
+    );
 
     // Close /dev/mem:
     close(fd);

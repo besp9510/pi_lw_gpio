@@ -98,7 +98,7 @@ int gpio_set(int p) {
     if (!config_gpio_flag) {
         if ((ret = config_gpio()) < 0) {
             return ret;
-        };
+        }
     }
 
     // Check if input GPIO is in range:
@@ -119,7 +119,7 @@ int gpio_clear(int p) {
     if (!config_gpio_flag) {
         if ((ret = config_gpio()) < 0) {
             return ret;
-        };
+        }
     }
 
     // Check if input GPIO is in range:
@@ -141,7 +141,7 @@ int gpio_read_level(int p) {
     if (!config_gpio_flag) {
         if ((ret = config_gpio()) < 0) {
             return ret;
-        };
+        }
     }
 
     // Check if input GPIO is in range:
@@ -167,7 +167,7 @@ int gpio_read_mode(int p) {
     if (!config_gpio_flag) {
         if ((ret = config_gpio()) < 0) {
             return ret;
-        };
+        }
     }
 
     // Check if input GPIO is in range:
@@ -186,7 +186,7 @@ int gpio_set_mode(int mode, int p) {
     if (!config_gpio_flag) {
         if ((ret = config_gpio()) < 0) {
             return ret;
-        };
+        }
     }
 
     // Check if input GPIO is in range:
